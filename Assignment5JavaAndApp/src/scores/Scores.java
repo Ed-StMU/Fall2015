@@ -4,7 +4,7 @@ public class Scores {
 
 	private int scores[] = new int[5];
 
-	public Scores(int scoreList[]) {
+	public Scores(int scoreList[]) throws IllegalArgumentException {
 		for (int x = 0; x < scoreList.length; x++) {
 			if (scoreList[x] < 0 || scoreList[x] > 100)
 				throw new IllegalArgumentException("ERROR: Invalid score value(s)");
