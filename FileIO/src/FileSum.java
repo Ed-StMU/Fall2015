@@ -6,7 +6,7 @@ public class FileSum {
 
 		try {
 
-			// Write to the sum file
+			// Write to the Sum.txt file
 			PrintWriter p = new PrintWriter("Sum.txt");
 			Scanner keyboard = new Scanner(System.in);
 			int i = 0;
@@ -21,10 +21,11 @@ public class FileSum {
 			}
 			p.close();
 
-			// Read from the sum file
+			// Load the Sum.txt file
 			File f = new File("Sum.txt");
 			Scanner inputFile = new Scanner(f);
 
+			// Read the Sum.txt file
 			while (inputFile.hasNext()) {
 				String line = inputFile.nextLine();
 				System.out.println(line);
