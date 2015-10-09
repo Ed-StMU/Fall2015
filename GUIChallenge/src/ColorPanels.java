@@ -12,6 +12,7 @@ public class ColorPanels extends JFrame {
 		JPanel main = new JPanel();
 		main.setLayout(null);
 		main.setSize(400, 250);
+		main.setBackground(Color.BLACK);
 
 		JPanel p1 = new JPanel();
 		p1.setSize(80, 100);
@@ -30,12 +31,15 @@ public class ColorPanels extends JFrame {
 
 		JLabel rLabel = new JLabel("Red");
 		rLabel.setBounds(55, 25, 25, 25);
+		rLabel.setForeground(Color.RED);
 
 		JLabel bLabel = new JLabel("Blue");
 		bLabel.setBounds(175, 25, 50, 25);
+		bLabel.setForeground(Color.BLUE);
 
 		JLabel yLabel = new JLabel("Yellow");
 		yLabel.setBounds(296, 25, 50, 25);
+		yLabel.setForeground(Color.YELLOW);
 
 		JButton rButton = new JButton("Red");
 		rButton.setBounds(36, 160, 60, 25);
