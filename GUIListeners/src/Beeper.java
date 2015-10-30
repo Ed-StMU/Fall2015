@@ -9,8 +9,8 @@ public class Beeper extends JFrame {
 
 	public Beeper() {
 
-		setTitle("Beeper");
-		setSize(250, 150);
+		super("Beeper");
+		setSize(250, 200);
 
 		button.addActionListener(new ButtonListener());
 		add(button);
