@@ -4,24 +4,22 @@ import java.text.DecimalFormat;
 
 public class TempConverter extends JFrame {
 
-	private JPanel panel;
-	private JLabel celsiusLabel;
-	private JLabel fahrenLabel;
 	private JTextField celsiusText;
 	private JTextField fahrenText;
-	private JButton button;
 
 	public TempConverter() {
 
 		super("Temperature Converter");
-
-		panel = new JPanel();
-		celsiusLabel = new JLabel("Celsius: ");
-		fahrenLabel = new JLabel("Fahrenheit: ");
+		JPanel panel = new JPanel();
+		
+		JLabel celsiusLabel = new JLabel("Celsius: ");
+		JLabel fahrenLabel = new JLabel("Fahrenheit: ");
+		
 		celsiusText = new JTextField(5);
 		fahrenText = new JTextField(5);
 		fahrenText.setEditable(false);
-		button = new JButton("Convert");
+		
+		JButton button = new JButton("Convert");
 		button.addActionListener(new ButtonListener());
 
 		panel.add(celsiusLabel);
