@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.event.*;
+import java.text.DecimalFormat;
 
 public class TempConverter extends JFrame {
 
@@ -42,10 +43,11 @@ public class TempConverter extends JFrame {
 
 			String str;
 			double fahrenheit;
+			DecimalFormat df = new DecimalFormat("#.0#");
 
 			str = celsiusText.getText();
 			fahrenheit = Double.parseDouble(str) * (9.0 / 5) + 32;
-			fahrenText.setText(Double.toString(fahrenheit));
+			fahrenText.setText(df.format(fahrenheit));
 		}
 	}
 
