@@ -36,7 +36,7 @@ public class TempConverter extends JFrame {
 		setVisible(true);
 	}
 
-	private class ButtonListener implements ActionListener {
+	public class ButtonListener implements ActionListener {
 
 		public void actionPerformed(ActionEvent e) {
 
