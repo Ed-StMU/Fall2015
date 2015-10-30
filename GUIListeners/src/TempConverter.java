@@ -12,7 +12,7 @@ public class TempConverter extends JFrame {
 
 	public TempConverter() {
 
-		setTitle("Temperature Converter");
+		super("Temperature Converter");
 
 		panel = new JPanel();
 		celsiusLabel = new JLabel("Celsius: ");
