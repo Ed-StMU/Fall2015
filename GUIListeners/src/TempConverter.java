@@ -19,6 +19,7 @@ public class TempConverter extends JFrame {
 		fahrenLabel = new JLabel("Fahrenheit: ");
 		celsiusText = new JTextField(5);
 		fahrenText = new JTextField(5);
+		fahrenText.setEditable(false);
 		button = new JButton("Convert");
 		button.addActionListener(new ButtonListener());
 
