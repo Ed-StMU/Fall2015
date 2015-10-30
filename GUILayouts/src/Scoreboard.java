@@ -5,7 +5,7 @@ public class Scoreboard extends JFrame {
 
 	public Scoreboard() {
 
-		setTitle("Scoreboard");
+		super("Scoreboard");
 		setSize(300, 200);
 		setLayout(new BorderLayout(5, 10));
 
